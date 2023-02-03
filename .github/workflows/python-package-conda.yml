@@ -1,16 +1,5 @@
 name: Python Package using Conda
-on:
-  push:
-    branches:
-      - "main"
-      - "prod-deploy"
-    paths:
-      - 'backend/**'
-  pull_request:
-    paths:
-      - 'backend/**'
-      - 'dlp-terraform/**'
-      - 'tests/**'
+on: [push, pull_request]
 
 jobs:
   build-linux:
